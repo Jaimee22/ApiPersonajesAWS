@@ -73,6 +73,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
-Get started with Swashbuckle and ASP.NET Core
-Learn how to add Swashbuckle to your ASP.NET Core web API project to integrate the Swagger UI.
