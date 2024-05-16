@@ -2,15 +2,6 @@ using ApiPersonajesAWS.Data;
 using ApiPersonajesAWS.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-
-[12:42] Javier Roca Pestaña
-using ApiPersonajesAWS.Data;
-
-using ApiPersonajesAWS.Repositories;
-
-using Microsoft.EntityFrameworkCore;
-
-using Microsoft.OpenApi.Models;
  
 var builder = WebApplication.CreateBuilder(args);
 
