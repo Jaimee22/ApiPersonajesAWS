@@ -8,19 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddCors(p => p.AddPolicy("corsenabled", options =>
-
 {
-
     options.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
-
 }));
 
 string connectionString = builder.Configuration.GetConnectionString("MySqlTelevision");
 
 builder.Services.AddTransient<RepositoryPersonajes>();
-
 builder.Services.AddDbContext<PersonajesContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
-
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
